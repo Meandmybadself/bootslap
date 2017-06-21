@@ -17,8 +17,8 @@
     homebrew: name={{ item }} state=present
     with_items:
       - git
-      - hub
-      - scmpuff
+#      - hub
+#      - scmpuff
       - ssh-copy-id
       - imagemagick
 
@@ -49,8 +49,8 @@
       - firefox
       # text editors i hate the least
       - atom
-      - macvim
-      - mou
+#      - macvim
+#      - mou
       # virtual machines
       - vmware-fusion
       # other dev tools
@@ -61,17 +61,20 @@
       - cloud
       - daisydisk
       - dropbox
-      - flux
+      # - flux
       # non-dev stuff for general unproductivity
-      - steam
+#      - steam
       - transmission
       - vlc
+      - fastlane
+
 
   - name: install homebrew tools
     tags: brews
     homebrew: state=present name={{ item }}
     with_items:
       # dev tools
+      - autojump
       - ack
       - jq
       - gist
@@ -93,3 +96,7 @@
       # media related tools
       - pianobar
       - ffmpeg
+      # project stuff
+      - mongodb
+      - transmit
+      - watchman
