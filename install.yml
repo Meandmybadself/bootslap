@@ -49,8 +49,6 @@
       - firefox
       # text editors i hate the least
       - atom
-#      - macvim
-#      - mou
       # virtual machines
       - vmware-fusion
       # other dev tools
@@ -61,7 +59,6 @@
       - cloud
       - daisydisk
       - dropbox
-      # - flux
       # non-dev stuff for general unproductivity
 #      - steam
       - transmission
